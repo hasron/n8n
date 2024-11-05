@@ -33,23 +33,23 @@ export class TestEntity extends WithTimestamps {
 	@Length(1, 255, { message: 'Test name must be $constraint1 to $constraint2 characters long.' })
 	name: string;
 
-	@RelationId((test: TestEntity) => test.workflow)
-	workflowId: string;
-
 	/**
 	 * Relation to the workflow under test
 	 */
 	@ManyToOne('WorkflowEntity', 'tests')
 	workflow: WorkflowEntity;
 
-	@RelationId((test: TestEntity) => test.evaluationWorkflow)
-	evaluationWorkflowId: string;
+	@RelationId((test: TestEntity) => test.workflow)
+	workflowId: string;
 
 	/**
 	 * Relation to the workflow used to evaluate the results of test execution
 	 */
 	@ManyToOne('WorkflowEntity', 'evaluationTests')
 	evaluationWorkflow: WorkflowEntity;
+
+	@RelationId((test: TestEntity) => test.evaluationWorkflow)
+	evaluationWorkflowId: string;
 
 	/**
 	 * Relation to the annotation tag associated with the test
