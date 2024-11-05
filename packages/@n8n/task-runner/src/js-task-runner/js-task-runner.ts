@@ -21,6 +21,9 @@ import type {
 import * as a from 'node:assert';
 import { runInNewContext, type Context } from 'node:vm';
 
+import type { MainConfig } from '@/config/main-config';
+import type { HoistedDataRequestResponse } from '@/data-request/data-request-response-hoister';
+import { HoistedDataRequestResponseInliner } from '@/data-request/hoisted-data-request-response-inliner';
 import type { TaskResultData } from '@/runner-types';
 import { type Task, TaskRunner } from '@/task-runner';
 
@@ -32,7 +35,6 @@ import { makeSerializable } from './errors/serializable-error';
 import type { RequireResolver } from './require-resolver';
 import { createRequireResolver } from './require-resolver';
 import { validateRunForAllItemsOutput, validateRunForEachItemOutput } from './result-validation';
-import type { MainConfig } from '../config/main-config';
 
 export interface JSExecSettings {
 	code: string;
@@ -114,10 +116,12 @@ export class JsTaskRunner extends TaskRunner {
 			? neededBuiltInsResult.result
 			: BuiltInsParserState.newNeedsAllDataState();
 
-		const data = await this.requestData<DataRequestResponse>(
+		const hoistedDataResponse = await this.requestData<HoistedDataRequestResponse>(
 			task.taskId,
 			neededBuiltIns.toDataRequestParams(),
 		);
+
+		const data = new HoistedDataRequestResponseInliner(hoistedDataResponse).inline();
 
 		const workflowParams = data.workflow;
 		const workflow = new Workflow({

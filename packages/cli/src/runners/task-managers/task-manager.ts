@@ -1,5 +1,10 @@
+import { TaskRunnersConfig } from '@n8n/config';
 import type { TaskResultData, RequesterMessage, BrokerMessage, TaskData } from '@n8n/task-runner';
-import { RPC_ALLOW_LIST } from '@n8n/task-runner';
+import {
+	DataRequestResponseHoister,
+	HoistedDataRequestResponseInliner,
+	RPC_ALLOW_LIST,
+} from '@n8n/task-runner';
 import type {
 	EnvProviderState,
 	IExecuteFunctions,
@@ -17,6 +22,8 @@ import type {
 } from 'n8n-workflow';
 import { createResultOk, createResultError } from 'n8n-workflow';
 import { nanoid } from 'nanoid';
+import * as a from 'node:assert/strict';
+import Container from 'typedi';
 
 import { DataRequestResponseBuilder } from './data-request-response-builder';
 
@@ -51,6 +58,8 @@ export class TaskManager {
 	pendingRequests: Map<string, TaskRequest> = new Map();
 
 	tasks: Map<string, Task> = new Map();
+
+	runnerConfig = Container.get(TaskRunnersConfig);
 
 	async startTask<TData, TError>(
 		additionalData: IWorkflowExecuteAdditionalData,
@@ -230,12 +239,18 @@ export class TaskManager {
 
 		const dataRequestResponseBuilder = new DataRequestResponseBuilder(job.data, requestParams);
 		const requestedData = dataRequestResponseBuilder.build();
+		const hoisted = new DataRequestResponseHoister().hoist(requestedData);
+
+		if (this.runnerConfig.assertHoistOutput) {
+			const inlined = new HoistedDataRequestResponseInliner(hoisted).inline();
+			a.deepStrictEqual(JSON.stringify(inlined), JSON.stringify(requestedData));
+		}
 
 		this.sendMessage({
 			type: 'requester:taskdataresponse',
 			taskId,
 			requestId,
-			data: requestedData,
+			data: hoisted,
 		});
 	}
 

@@ -1,0 +1,1753 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data request hoisting and inlining Multiple inputs hoists the objects in the data correctly: Multiple inputs 1`] = `
+{
+  "activeNodeName": "Aggregate",
+  "additionalData": {
+    "executionId": "176240",
+    "formWaitingBaseUrl": "http://localhost:5678/form-waiting",
+    "instanceBaseUrl": "http://localhost:5678/",
+    "restApiUrl": "http://localhost:5678/rest",
+    "userId": "114984bc-44b3-4dd4-9b54-a4a8d34d51d5",
+    "variables": {},
+    "webhookBaseUrl": "http://localhost:5678/webhook",
+    "webhookTestBaseUrl": "http://localhost:5678/webhook-test",
+    "webhookWaitingBaseUrl": "http://localhost:5678/webhook-waiting",
+  },
+  "connectionInputData": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+  ],
+  "contextNodeName": "Aggregate",
+  "defaultReturnRunIndex": -1,
+  "envProviderState": {
+    "env": {},
+    "isEnvAccessBlocked": false,
+    "isProcessAvailable": true,
+  },
+  "executeData": {
+    "data": {
+      "main": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+        ],
+      ],
+    },
+    "node": 10,
+    "source": {
+      "main": [
+        {
+          "previousNode": "AddField",
+        },
+      ],
+    },
+  },
+  "inputData": {
+    "main": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+      ],
+    ],
+  },
+  "itemIndex": 0,
+  "mode": "manual",
+  "node": 10,
+  "refs": [
+    {
+      "json": {
+        "age": 44,
+        "createdAt": "2024-04-22T01:52:09.320Z",
+        "email": "bob.williams@domain.com",
+        "firstName": "Bob",
+        "fullName": "Bob Williams",
+        "isActive": false,
+        "lastName": "Williams",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.811-05:00",
+        "userId": 4451,
+      },
+      "pairedItem": {
+        "item": 0,
+      },
+    },
+    {
+      "json": {
+        "age": 70,
+        "createdAt": "2023-12-18T15:41:00.202Z",
+        "email": "charlie.smith@example.com",
+        "firstName": "Charlie",
+        "fullName": "Charlie Smith",
+        "isActive": false,
+        "lastName": "Smith",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.813-05:00",
+        "userId": 3827,
+      },
+      "pairedItem": {
+        "item": 1,
+      },
+    },
+    {
+      "json": {
+        "age": 56,
+        "createdAt": "2024-08-25T10:38:28.556Z",
+        "email": "david.brown@test.com",
+        "firstName": "David",
+        "fullName": "David Brown",
+        "isActive": true,
+        "lastName": "Brown",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.813-05:00",
+        "userId": 6561,
+      },
+      "pairedItem": {
+        "item": 2,
+      },
+    },
+    {
+      "json": {
+        "age": 67,
+        "createdAt": "2024-08-08T17:30:40.199Z",
+        "email": "bob.jones@test.com",
+        "firstName": "Bob",
+        "fullName": "Bob Jones",
+        "isActive": true,
+        "lastName": "Jones",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.813-05:00",
+        "userId": 7827,
+      },
+      "pairedItem": {
+        "item": 3,
+      },
+    },
+    {
+      "json": {
+        "age": 39,
+        "createdAt": "2023-11-07T20:33:47.731Z",
+        "email": "charlie.johnson@example.com",
+        "firstName": "Charlie",
+        "fullName": "Charlie Johnson",
+        "isActive": false,
+        "lastName": "Johnson",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.814-05:00",
+        "userId": 1462,
+      },
+      "pairedItem": {
+        "item": 4,
+      },
+    },
+    {
+      "json": {
+        "age": 32,
+        "createdAt": "2023-11-22T02:57:57.430Z",
+        "email": "eve.smith@test.com",
+        "firstName": "Eve",
+        "fullName": "Eve Smith",
+        "isActive": true,
+        "lastName": "Smith",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.814-05:00",
+        "userId": 2118,
+      },
+      "pairedItem": {
+        "item": 5,
+      },
+    },
+    {
+      "json": {
+        "age": 29,
+        "createdAt": "2024-05-04T12:10:26.111Z",
+        "email": "bob.smith@domain.com",
+        "firstName": "Bob",
+        "fullName": "Bob Smith",
+        "isActive": false,
+        "lastName": "Smith",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.814-05:00",
+        "userId": 1918,
+      },
+      "pairedItem": {
+        "item": 6,
+      },
+    },
+    {
+      "json": {
+        "age": 57,
+        "createdAt": "2024-01-15T07:45:20.218Z",
+        "email": "eve.jones@example.com",
+        "firstName": "Eve",
+        "fullName": "Eve Jones",
+        "isActive": false,
+        "lastName": "Jones",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.814-05:00",
+        "userId": 2946,
+      },
+      "pairedItem": {
+        "item": 7,
+      },
+    },
+    {
+      "json": {
+        "age": 53,
+        "createdAt": "2024-01-17T19:30:12.793Z",
+        "email": "charlie.jones@test.com",
+        "firstName": "Charlie",
+        "fullName": "Charlie Jones",
+        "isActive": true,
+        "lastName": "Jones",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.814-05:00",
+        "userId": 7258,
+      },
+      "pairedItem": {
+        "item": 8,
+      },
+    },
+    {
+      "json": {
+        "age": 53,
+        "createdAt": "2024-02-08T18:51:15.170Z",
+        "email": "alice.brown@test.com",
+        "firstName": "Alice",
+        "fullName": "Alice Brown",
+        "isActive": true,
+        "lastName": "Brown",
+        "myNewField": 1,
+        "updatedAt": "2024-11-05T13:55:21.815-05:00",
+        "userId": 7254,
+      },
+      "pairedItem": {
+        "item": 9,
+      },
+    },
+    {
+      "id": "e4a21d7d-6ac6-4d40-b9aa-63076a4823c4",
+      "name": "Aggregate",
+      "parameters": {
+        "jsCode": "let maxId = 0
+let sumAge = 0
+
+for (let it of $input.all()) {
+  maxId = Math.max(maxId, it.json.userId)
+  sumAge += it.json.age
+}
+
+return {
+  json: {
+    maxId,
+    avgAge: sumAge / $input.all().length
+  }
+}",
+        "language": "javaScript",
+        "mode": "runOnceForAllItems",
+        "notice": "",
+      },
+      "position": [
+        1360,
+        460,
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+    },
+  ],
+  "runExecutionData": {
+    "executionData": {
+      "contextData": {},
+      "metadata": {},
+      "nodeExecutionStack": [],
+      "waitingExecution": {},
+      "waitingExecutionSource": {},
+    },
+    "resultData": {
+      "lastNodeExecuted": "AddField",
+      "pinData": {},
+      "runData": {},
+    },
+    "startData": {},
+  },
+  "runIndex": 0,
+  "selfData": {},
+  "siblingParameters": {},
+  "workflow": {
+    "active": false,
+    "connections": {
+      "AddField": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Aggregate",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "Aggregate": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "AccessPastNode",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "CreateData": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Edit Fields",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "Edit Fields": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "AddField",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "When clicking ‘Test workflow’": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "CreateData",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+    },
+    "id": "y5ScWBIM535AJeLm",
+    "name": "Many Code Nodes",
+    "nodes": [
+      {
+        "id": "d4ef24a2-e448-479d-ae04-2ffa58988c8b",
+        "name": "When clicking ‘Test workflow’",
+        "parameters": {
+          "notice": "",
+        },
+        "position": [
+          460,
+          460,
+        ],
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+      },
+      {
+        "id": "49124629-9c05-44c4-8952-1335ddd10427",
+        "name": "Edit Fields",
+        "parameters": {
+          "assignments": {
+            "assignments": [
+              {
+                "id": "be9f61bf-17d0-448a-b5c9-dc9a0823a9f5",
+                "name": "fullName",
+                "type": "string",
+                "value": "={{ $json.firstName }} {{ $json.lastName }}",
+              },
+              {
+                "id": "506ecd03-53be-4a7e-b1ce-dd892260931b",
+                "name": "updatedAt",
+                "type": "string",
+                "value": "={{ $now.toISO() }}",
+              },
+            ],
+          },
+          "duplicateItem": false,
+          "include": "all",
+          "includeOtherFields": true,
+          "mode": "manual",
+          "options": {},
+        },
+        "position": [
+          920,
+          460,
+        ],
+        "type": "n8n-nodes-base.set",
+        "typeVersion": 3.4,
+      },
+      {
+        "id": "baaa6158-553b-41df-bd4a-8b4b5458c07b",
+        "name": "CreateData",
+        "parameters": {
+          "jsCode": "function getRandomUser() {
+  const firstNames = ["Alice", "Bob", "Charlie", "David", "Eve"];
+  const lastNames = ["Smith", "Johnson", "Brown", "Williams", "Jones"];
+  const domains = ["example.com", "test.com", "domain.com"];
+
+  const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+  const firstName = getRandomElement(firstNames);
+  const lastName = getRandomElement(lastNames);
+  const age = getRandomInt(18, 70);
+  const email = \`\${firstName.toLowerCase()}.\${lastName.toLowerCase()}@\${getRandomElement(domains)}\`;
+  const userId = getRandomInt(1000, 9999);
+
+  return {
+    userId,
+    firstName,
+    lastName,
+    age,
+    email,
+    isActive: Math.random() > 0.5,
+    createdAt: new Date(Date.now() - getRandomInt(0, 1000 * 60 * 60 * 24 * 365)).toISOString(),
+  };
+}
+
+return Array.from({ length: 10 }).map(x => getRandomUser())",
+          "language": "javaScript",
+          "mode": "runOnceForAllItems",
+          "notice": "",
+        },
+        "position": [
+          680,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+      {
+        "id": "502761a1-d54f-40ef-a0c7-3d00e8378ac3",
+        "name": "AddField",
+        "parameters": {
+          "jsCode": "// Add a new field called 'myNewField' to the JSON of the item
+$input.item.json.myNewField = 1;
+
+return $input.item;",
+          "language": "javaScript",
+          "mode": "runOnceForEachItem",
+          "notice": "",
+        },
+        "position": [
+          1140,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+      {
+        "id": "e4a21d7d-6ac6-4d40-b9aa-63076a4823c4",
+        "name": "Aggregate",
+        "parameters": {
+          "jsCode": "let maxId = 0
+let sumAge = 0
+
+for (let it of $input.all()) {
+  maxId = Math.max(maxId, it.json.userId)
+  sumAge += it.json.age
+}
+
+return {
+  json: {
+    maxId,
+    avgAge: sumAge / $input.all().length
+  }
+}",
+          "language": "javaScript",
+          "mode": "runOnceForAllItems",
+          "notice": "",
+        },
+        "position": [
+          1360,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+      {
+        "id": "9f1f3762-5870-4905-a67e-4a8a92746a2f",
+        "name": "AccessPastNode",
+        "parameters": {
+          "jsCode": "const items = $('CreateData').all()
+const stats = $input.first().json
+
+return items.map(i => ({
+  ...i,
+  stats
+}))",
+          "language": "javaScript",
+          "mode": "runOnceForAllItems",
+          "notice": "",
+        },
+        "position": [
+          1580,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+    ],
+    "pinData": {},
+    "settings": {
+      "executionOrder": "v1",
+    },
+    "staticData": {},
+  },
+}
+`;
+
+exports[`Data request hoisting and inlining No inputs hoists the objects in the data correctly: No inputs 1`] = `
+{
+  "activeNodeName": "CreateData",
+  "additionalData": {
+    "executionId": "176240",
+    "formWaitingBaseUrl": "http://localhost:5678/form-waiting",
+    "instanceBaseUrl": "http://localhost:5678/",
+    "restApiUrl": "http://localhost:5678/rest",
+    "userId": "114984bc-44b3-4dd4-9b54-a4a8d34d51d5",
+    "variables": {},
+    "webhookBaseUrl": "http://localhost:5678/webhook",
+    "webhookTestBaseUrl": "http://localhost:5678/webhook-test",
+    "webhookWaitingBaseUrl": "http://localhost:5678/webhook-waiting",
+  },
+  "connectionInputData": [],
+  "contextNodeName": "CreateData",
+  "defaultReturnRunIndex": -1,
+  "envProviderState": {
+    "env": {},
+    "isEnvAccessBlocked": false,
+    "isProcessAvailable": true,
+  },
+  "executeData": {
+    "data": {},
+    "node": 0,
+    "source": {
+      "main": [
+        {
+          "previousNode": "When clicking ‘Test workflow’",
+        },
+      ],
+    },
+  },
+  "inputData": {},
+  "itemIndex": 0,
+  "mode": "manual",
+  "node": 0,
+  "refs": [
+    {
+      "id": "baaa6158-553b-41df-bd4a-8b4b5458c07b",
+      "name": "CreateData",
+      "parameters": {
+        "jsCode": "function getRandomUser() {
+  const firstNames = ["Alice", "Bob", "Charlie", "David", "Eve"];
+  const lastNames = ["Smith", "Johnson", "Brown", "Williams", "Jones"];
+  const domains = ["example.com", "test.com", "domain.com"];
+
+  const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+  const firstName = getRandomElement(firstNames);
+  const lastName = getRandomElement(lastNames);
+  const age = getRandomInt(18, 70);
+  const email = \`\${firstName.toLowerCase()}.\${lastName.toLowerCase()}@\${getRandomElement(domains)}\`;
+  const userId = getRandomInt(1000, 9999);
+
+  return {
+    userId,
+    firstName,
+    lastName,
+    age,
+    email,
+    isActive: Math.random() > 0.5,
+    createdAt: new Date(Date.now() - getRandomInt(0, 1000 * 60 * 60 * 24 * 365)).toISOString(),
+  };
+}
+
+return Array.from({ length: 10 }).map(x => getRandomUser())",
+        "language": "javaScript",
+        "mode": "runOnceForAllItems",
+        "notice": "",
+      },
+      "position": [
+        680,
+        460,
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+    },
+  ],
+  "runExecutionData": {
+    "executionData": {
+      "contextData": {},
+      "metadata": {},
+      "nodeExecutionStack": [],
+      "waitingExecution": {},
+      "waitingExecutionSource": {},
+    },
+    "resultData": {
+      "lastNodeExecuted": "When clicking ‘Test workflow’",
+      "pinData": {},
+      "runData": {},
+    },
+    "startData": {},
+  },
+  "runIndex": 0,
+  "selfData": {},
+  "siblingParameters": {},
+  "workflow": {
+    "active": false,
+    "connections": {
+      "AddField": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Aggregate",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "Aggregate": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "AccessPastNode",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "CreateData": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Edit Fields",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "Edit Fields": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "AddField",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "When clicking ‘Test workflow’": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "CreateData",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+    },
+    "id": "y5ScWBIM535AJeLm",
+    "name": "Many Code Nodes",
+    "nodes": [
+      {
+        "id": "d4ef24a2-e448-479d-ae04-2ffa58988c8b",
+        "name": "When clicking ‘Test workflow’",
+        "parameters": {
+          "notice": "",
+        },
+        "position": [
+          460,
+          460,
+        ],
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+      },
+      {
+        "id": "49124629-9c05-44c4-8952-1335ddd10427",
+        "name": "Edit Fields",
+        "parameters": {
+          "assignments": {
+            "assignments": [
+              {
+                "id": "be9f61bf-17d0-448a-b5c9-dc9a0823a9f5",
+                "name": "fullName",
+                "type": "string",
+                "value": "={{ $json.firstName }} {{ $json.lastName }}",
+              },
+              {
+                "id": "506ecd03-53be-4a7e-b1ce-dd892260931b",
+                "name": "updatedAt",
+                "type": "string",
+                "value": "={{ $now.toISO() }}",
+              },
+            ],
+          },
+          "duplicateItem": false,
+          "include": "all",
+          "includeOtherFields": true,
+          "mode": "manual",
+          "options": {},
+        },
+        "position": [
+          920,
+          460,
+        ],
+        "type": "n8n-nodes-base.set",
+        "typeVersion": 3.4,
+      },
+      {
+        "id": "baaa6158-553b-41df-bd4a-8b4b5458c07b",
+        "name": "CreateData",
+        "parameters": {
+          "jsCode": "function getRandomUser() {
+  const firstNames = ["Alice", "Bob", "Charlie", "David", "Eve"];
+  const lastNames = ["Smith", "Johnson", "Brown", "Williams", "Jones"];
+  const domains = ["example.com", "test.com", "domain.com"];
+
+  const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+  const firstName = getRandomElement(firstNames);
+  const lastName = getRandomElement(lastNames);
+  const age = getRandomInt(18, 70);
+  const email = \`\${firstName.toLowerCase()}.\${lastName.toLowerCase()}@\${getRandomElement(domains)}\`;
+  const userId = getRandomInt(1000, 9999);
+
+  return {
+    userId,
+    firstName,
+    lastName,
+    age,
+    email,
+    isActive: Math.random() > 0.5,
+    createdAt: new Date(Date.now() - getRandomInt(0, 1000 * 60 * 60 * 24 * 365)).toISOString(),
+  };
+}
+
+return Array.from({ length: 10 }).map(x => getRandomUser())",
+          "language": "javaScript",
+          "mode": "runOnceForAllItems",
+          "notice": "",
+        },
+        "position": [
+          680,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+      {
+        "id": "502761a1-d54f-40ef-a0c7-3d00e8378ac3",
+        "name": "AddField",
+        "parameters": {
+          "jsCode": "// Add a new field called 'myNewField' to the JSON of the item
+$input.item.json.myNewField = 1;
+
+return $input.item;",
+          "language": "javaScript",
+          "mode": "runOnceForEachItem",
+          "notice": "",
+        },
+        "position": [
+          1140,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+      {
+        "id": "e4a21d7d-6ac6-4d40-b9aa-63076a4823c4",
+        "name": "Aggregate",
+        "parameters": {
+          "jsCode": "let maxId = 0
+let sumAge = 0
+
+for (let it of $input.all()) {
+  maxId = Math.max(maxId, it.json.userId)
+  sumAge += it.json.age
+}
+
+return {
+  json: {
+    maxId,
+    avgAge: sumAge / $input.all().length
+  }
+}",
+          "language": "javaScript",
+          "mode": "runOnceForAllItems",
+          "notice": "",
+        },
+        "position": [
+          1360,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+      {
+        "id": "9f1f3762-5870-4905-a67e-4a8a92746a2f",
+        "name": "AccessPastNode",
+        "parameters": {
+          "jsCode": "const items = $('CreateData').all()
+const stats = $input.first().json
+
+return items.map(i => ({
+  ...i,
+  stats
+}))",
+          "language": "javaScript",
+          "mode": "runOnceForAllItems",
+          "notice": "",
+        },
+        "position": [
+          1580,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+    ],
+    "pinData": {},
+    "settings": {
+      "executionOrder": "v1",
+    },
+    "staticData": {},
+  },
+}
+`;
+
+exports[`Data request hoisting and inlining With run execution data hoists the objects in the data correctly: With run execution data 1`] = `
+{
+  "activeNodeName": "AccessPastNode",
+  "additionalData": {
+    "executionId": "176240",
+    "formWaitingBaseUrl": "http://localhost:5678/form-waiting",
+    "instanceBaseUrl": "http://localhost:5678/",
+    "restApiUrl": "http://localhost:5678/rest",
+    "userId": "114984bc-44b3-4dd4-9b54-a4a8d34d51d5",
+    "variables": {},
+    "webhookBaseUrl": "http://localhost:5678/webhook",
+    "webhookTestBaseUrl": "http://localhost:5678/webhook-test",
+    "webhookWaitingBaseUrl": "http://localhost:5678/webhook-waiting",
+  },
+  "connectionInputData": [
+    0,
+  ],
+  "contextNodeName": "AccessPastNode",
+  "defaultReturnRunIndex": -1,
+  "envProviderState": {
+    "env": {},
+    "isEnvAccessBlocked": false,
+    "isProcessAvailable": true,
+  },
+  "executeData": {
+    "data": {},
+    "node": 1,
+    "source": {
+      "main": [
+        {
+          "previousNode": "Aggregate",
+        },
+      ],
+    },
+  },
+  "inputData": {
+    "main": [
+      [
+        0,
+      ],
+    ],
+  },
+  "itemIndex": 0,
+  "mode": "manual",
+  "node": 1,
+  "refs": [
+    {
+      "json": {
+        "avgAge": 47.5,
+        "maxId": 9419,
+      },
+      "pairedItem": {
+        "item": 0,
+      },
+    },
+    {
+      "id": "9f1f3762-5870-4905-a67e-4a8a92746a2f",
+      "name": "AccessPastNode",
+      "parameters": {
+        "jsCode": "const items = $('CreateData').item
+const stats = $input.first().json
+
+return items.map(i => ({
+  ...i,
+  stats
+}))",
+        "language": "javaScript",
+        "mode": "runOnceForAllItems",
+        "notice": "",
+      },
+      "position": [
+        1620,
+        460,
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+    },
+  ],
+  "runExecutionData": {
+    "executionData": {
+      "contextData": {},
+      "metadata": {},
+      "nodeExecutionStack": [],
+      "waitingExecution": {},
+      "waitingExecutionSource": {},
+    },
+    "resultData": {
+      "lastNodeExecuted": "Aggregate",
+      "pinData": {},
+      "runData": {
+        "AddField": [
+          {
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "age": 29,
+                      "createdAt": "2024-06-01T18:16:32.713Z",
+                      "email": "charlie.jones@example.com",
+                      "firstName": "Charlie",
+                      "fullName": "Charlie Jones",
+                      "isActive": true,
+                      "lastName": "Jones",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.091-05:00",
+                      "userId": 4501,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 63,
+                      "createdAt": "2024-08-24T02:43:42.293Z",
+                      "email": "alice.smith@example.com",
+                      "firstName": "Alice",
+                      "fullName": "Alice Smith",
+                      "isActive": true,
+                      "lastName": "Smith",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.094-05:00",
+                      "userId": 5083,
+                    },
+                    "pairedItem": {
+                      "item": 1,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 60,
+                      "createdAt": "2024-10-27T11:54:36.411Z",
+                      "email": "charlie.williams@test.com",
+                      "firstName": "Charlie",
+                      "fullName": "Charlie Williams",
+                      "isActive": true,
+                      "lastName": "Williams",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.095-05:00",
+                      "userId": 8607,
+                    },
+                    "pairedItem": {
+                      "item": 2,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 46,
+                      "createdAt": "2024-01-14T11:49:02.185Z",
+                      "email": "david.johnson@domain.com",
+                      "firstName": "David",
+                      "fullName": "David Johnson",
+                      "isActive": false,
+                      "lastName": "Johnson",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.095-05:00",
+                      "userId": 8995,
+                    },
+                    "pairedItem": {
+                      "item": 3,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 36,
+                      "createdAt": "2024-05-08T14:37:45.937Z",
+                      "email": "eve.jones@test.com",
+                      "firstName": "Eve",
+                      "fullName": "Eve Jones",
+                      "isActive": false,
+                      "lastName": "Jones",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.095-05:00",
+                      "userId": 2650,
+                    },
+                    "pairedItem": {
+                      "item": 4,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 18,
+                      "createdAt": "2024-04-01T22:15:21.229Z",
+                      "email": "charlie.williams@test.com",
+                      "firstName": "Charlie",
+                      "fullName": "Charlie Williams",
+                      "isActive": true,
+                      "lastName": "Williams",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.095-05:00",
+                      "userId": 6358,
+                    },
+                    "pairedItem": {
+                      "item": 5,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 44,
+                      "createdAt": "2024-10-06T17:38:23.694Z",
+                      "email": "eve.johnson@test.com",
+                      "firstName": "Eve",
+                      "fullName": "Eve Johnson",
+                      "isActive": false,
+                      "lastName": "Johnson",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.096-05:00",
+                      "userId": 9419,
+                    },
+                    "pairedItem": {
+                      "item": 6,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 68,
+                      "createdAt": "2024-11-01T07:17:41.833Z",
+                      "email": "bob.jones@domain.com",
+                      "firstName": "Bob",
+                      "fullName": "Bob Jones",
+                      "isActive": false,
+                      "lastName": "Jones",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.096-05:00",
+                      "userId": 2292,
+                    },
+                    "pairedItem": {
+                      "item": 7,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 48,
+                      "createdAt": "2023-11-15T15:54:39.715Z",
+                      "email": "eve.smith@example.com",
+                      "firstName": "Eve",
+                      "fullName": "Eve Smith",
+                      "isActive": false,
+                      "lastName": "Smith",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.096-05:00",
+                      "userId": 8460,
+                    },
+                    "pairedItem": {
+                      "item": 8,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 63,
+                      "createdAt": "2024-09-22T06:12:42.027Z",
+                      "email": "bob.brown@test.com",
+                      "firstName": "Bob",
+                      "fullName": "Bob Brown",
+                      "isActive": true,
+                      "lastName": "Brown",
+                      "myNewField": 1,
+                      "updatedAt": "2024-11-05T14:38:15.096-05:00",
+                      "userId": 8451,
+                    },
+                    "pairedItem": {
+                      "item": 9,
+                    },
+                  },
+                ],
+              ],
+            },
+            "executionStatus": "success",
+            "executionTime": 9,
+            "hints": [],
+            "source": [
+              {
+                "previousNode": "Edit Fields",
+              },
+            ],
+            "startTime": 1730835495097,
+          },
+        ],
+        "Aggregate": [
+          {
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "avgAge": 47.5,
+                      "maxId": 9419,
+                    },
+                  },
+                ],
+              ],
+            },
+            "executionStatus": "success",
+            "executionTime": 5,
+            "hints": [],
+            "source": [
+              {
+                "previousNode": "AddField",
+              },
+            ],
+            "startTime": 1730835495106,
+          },
+        ],
+        "CreateData": [
+          {
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "age": 29,
+                      "createdAt": "2024-06-01T18:16:32.713Z",
+                      "email": "charlie.jones@example.com",
+                      "firstName": "Charlie",
+                      "isActive": true,
+                      "lastName": "Jones",
+                      "userId": 4501,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 63,
+                      "createdAt": "2024-08-24T02:43:42.293Z",
+                      "email": "alice.smith@example.com",
+                      "firstName": "Alice",
+                      "isActive": true,
+                      "lastName": "Smith",
+                      "userId": 5083,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 60,
+                      "createdAt": "2024-10-27T11:54:36.411Z",
+                      "email": "charlie.williams@test.com",
+                      "firstName": "Charlie",
+                      "isActive": true,
+                      "lastName": "Williams",
+                      "userId": 8607,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 46,
+                      "createdAt": "2024-01-14T11:49:02.185Z",
+                      "email": "david.johnson@domain.com",
+                      "firstName": "David",
+                      "isActive": false,
+                      "lastName": "Johnson",
+                      "userId": 8995,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 36,
+                      "createdAt": "2024-05-08T14:37:45.937Z",
+                      "email": "eve.jones@test.com",
+                      "firstName": "Eve",
+                      "isActive": false,
+                      "lastName": "Jones",
+                      "userId": 2650,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 18,
+                      "createdAt": "2024-04-01T22:15:21.229Z",
+                      "email": "charlie.williams@test.com",
+                      "firstName": "Charlie",
+                      "isActive": true,
+                      "lastName": "Williams",
+                      "userId": 6358,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 44,
+                      "createdAt": "2024-10-06T17:38:23.694Z",
+                      "email": "eve.johnson@test.com",
+                      "firstName": "Eve",
+                      "isActive": false,
+                      "lastName": "Johnson",
+                      "userId": 9419,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 68,
+                      "createdAt": "2024-11-01T07:17:41.833Z",
+                      "email": "bob.jones@domain.com",
+                      "firstName": "Bob",
+                      "isActive": false,
+                      "lastName": "Jones",
+                      "userId": 2292,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 48,
+                      "createdAt": "2023-11-15T15:54:39.715Z",
+                      "email": "eve.smith@example.com",
+                      "firstName": "Eve",
+                      "isActive": false,
+                      "lastName": "Smith",
+                      "userId": 8460,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 63,
+                      "createdAt": "2024-09-22T06:12:42.027Z",
+                      "email": "bob.brown@test.com",
+                      "firstName": "Bob",
+                      "isActive": true,
+                      "lastName": "Brown",
+                      "userId": 8451,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                ],
+              ],
+            },
+            "executionStatus": "success",
+            "executionTime": 63,
+            "hints": [],
+            "source": [
+              {
+                "previousNode": "When clicking ‘Test workflow’",
+              },
+            ],
+            "startTime": 1730835495022,
+          },
+        ],
+        "Edit Fields": [
+          {
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "age": 29,
+                      "createdAt": "2024-06-01T18:16:32.713Z",
+                      "email": "charlie.jones@example.com",
+                      "firstName": "Charlie",
+                      "fullName": "Charlie Jones",
+                      "isActive": true,
+                      "lastName": "Jones",
+                      "updatedAt": "2024-11-05T14:38:15.091-05:00",
+                      "userId": 4501,
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 63,
+                      "createdAt": "2024-08-24T02:43:42.293Z",
+                      "email": "alice.smith@example.com",
+                      "firstName": "Alice",
+                      "fullName": "Alice Smith",
+                      "isActive": true,
+                      "lastName": "Smith",
+                      "updatedAt": "2024-11-05T14:38:15.094-05:00",
+                      "userId": 5083,
+                    },
+                    "pairedItem": {
+                      "item": 1,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 60,
+                      "createdAt": "2024-10-27T11:54:36.411Z",
+                      "email": "charlie.williams@test.com",
+                      "firstName": "Charlie",
+                      "fullName": "Charlie Williams",
+                      "isActive": true,
+                      "lastName": "Williams",
+                      "updatedAt": "2024-11-05T14:38:15.095-05:00",
+                      "userId": 8607,
+                    },
+                    "pairedItem": {
+                      "item": 2,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 46,
+                      "createdAt": "2024-01-14T11:49:02.185Z",
+                      "email": "david.johnson@domain.com",
+                      "firstName": "David",
+                      "fullName": "David Johnson",
+                      "isActive": false,
+                      "lastName": "Johnson",
+                      "updatedAt": "2024-11-05T14:38:15.095-05:00",
+                      "userId": 8995,
+                    },
+                    "pairedItem": {
+                      "item": 3,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 36,
+                      "createdAt": "2024-05-08T14:37:45.937Z",
+                      "email": "eve.jones@test.com",
+                      "firstName": "Eve",
+                      "fullName": "Eve Jones",
+                      "isActive": false,
+                      "lastName": "Jones",
+                      "updatedAt": "2024-11-05T14:38:15.095-05:00",
+                      "userId": 2650,
+                    },
+                    "pairedItem": {
+                      "item": 4,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 18,
+                      "createdAt": "2024-04-01T22:15:21.229Z",
+                      "email": "charlie.williams@test.com",
+                      "firstName": "Charlie",
+                      "fullName": "Charlie Williams",
+                      "isActive": true,
+                      "lastName": "Williams",
+                      "updatedAt": "2024-11-05T14:38:15.095-05:00",
+                      "userId": 6358,
+                    },
+                    "pairedItem": {
+                      "item": 5,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 44,
+                      "createdAt": "2024-10-06T17:38:23.694Z",
+                      "email": "eve.johnson@test.com",
+                      "firstName": "Eve",
+                      "fullName": "Eve Johnson",
+                      "isActive": false,
+                      "lastName": "Johnson",
+                      "updatedAt": "2024-11-05T14:38:15.096-05:00",
+                      "userId": 9419,
+                    },
+                    "pairedItem": {
+                      "item": 6,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 68,
+                      "createdAt": "2024-11-01T07:17:41.833Z",
+                      "email": "bob.jones@domain.com",
+                      "firstName": "Bob",
+                      "fullName": "Bob Jones",
+                      "isActive": false,
+                      "lastName": "Jones",
+                      "updatedAt": "2024-11-05T14:38:15.096-05:00",
+                      "userId": 2292,
+                    },
+                    "pairedItem": {
+                      "item": 7,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 48,
+                      "createdAt": "2023-11-15T15:54:39.715Z",
+                      "email": "eve.smith@example.com",
+                      "firstName": "Eve",
+                      "fullName": "Eve Smith",
+                      "isActive": false,
+                      "lastName": "Smith",
+                      "updatedAt": "2024-11-05T14:38:15.096-05:00",
+                      "userId": 8460,
+                    },
+                    "pairedItem": {
+                      "item": 8,
+                    },
+                  },
+                  {
+                    "json": {
+                      "age": 63,
+                      "createdAt": "2024-09-22T06:12:42.027Z",
+                      "email": "bob.brown@test.com",
+                      "firstName": "Bob",
+                      "fullName": "Bob Brown",
+                      "isActive": true,
+                      "lastName": "Brown",
+                      "updatedAt": "2024-11-05T14:38:15.096-05:00",
+                      "userId": 8451,
+                    },
+                    "pairedItem": {
+                      "item": 9,
+                    },
+                  },
+                ],
+              ],
+            },
+            "executionStatus": "success",
+            "executionTime": 10,
+            "hints": [],
+            "source": [
+              {
+                "previousNode": "CreateData",
+              },
+            ],
+            "startTime": 1730835495086,
+          },
+        ],
+        "When clicking ‘Test workflow’": [
+          {
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0,
+                    },
+                  },
+                ],
+              ],
+            },
+            "executionStatus": "success",
+            "executionTime": 1,
+            "hints": [],
+            "source": [],
+            "startTime": 1730835495019,
+          },
+        ],
+      },
+    },
+    "startData": {},
+  },
+  "runIndex": 0,
+  "selfData": {},
+  "siblingParameters": {},
+  "workflow": {
+    "active": false,
+    "connections": {
+      "AddField": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Aggregate",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "Aggregate": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "AccessPastNode",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "CreateData": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Edit Fields",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "Edit Fields": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "AddField",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+      "When clicking ‘Test workflow’": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "CreateData",
+              "type": "main",
+            },
+          ],
+        ],
+      },
+    },
+    "id": "y5ScWBIM535AJeLm",
+    "name": "Many Code Nodes",
+    "nodes": [
+      {
+        "id": "d4ef24a2-e448-479d-ae04-2ffa58988c8b",
+        "name": "When clicking ‘Test workflow’",
+        "parameters": {
+          "notice": "",
+        },
+        "position": [
+          460,
+          460,
+        ],
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+      },
+      {
+        "id": "49124629-9c05-44c4-8952-1335ddd10427",
+        "name": "Edit Fields",
+        "parameters": {
+          "assignments": {
+            "assignments": [
+              {
+                "id": "be9f61bf-17d0-448a-b5c9-dc9a0823a9f5",
+                "name": "fullName",
+                "type": "string",
+                "value": "={{ $json.firstName }} {{ $json.lastName }}",
+              },
+              {
+                "id": "506ecd03-53be-4a7e-b1ce-dd892260931b",
+                "name": "updatedAt",
+                "type": "string",
+                "value": "={{ $now.toISO() }}",
+              },
+            ],
+          },
+          "duplicateItem": false,
+          "include": "all",
+          "includeOtherFields": true,
+          "mode": "manual",
+          "options": {},
+        },
+        "position": [
+          920,
+          460,
+        ],
+        "type": "n8n-nodes-base.set",
+        "typeVersion": 3.4,
+      },
+      {
+        "id": "baaa6158-553b-41df-bd4a-8b4b5458c07b",
+        "name": "CreateData",
+        "parameters": {
+          "jsCode": "function getRandomUser() {
+  const firstNames = ["Alice", "Bob", "Charlie", "David", "Eve"];
+  const lastNames = ["Smith", "Johnson", "Brown", "Williams", "Jones"];
+  const domains = ["example.com", "test.com", "domain.com"];
+
+  const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+  const firstName = getRandomElement(firstNames);
+  const lastName = getRandomElement(lastNames);
+  const age = getRandomInt(18, 70);
+  const email = \`\${firstName.toLowerCase()}.\${lastName.toLowerCase()}@\${getRandomElement(domains)}\`;
+  const userId = getRandomInt(1000, 9999);
+
+  return {
+    userId,
+    firstName,
+    lastName,
+    age,
+    email,
+    isActive: Math.random() > 0.5,
+    createdAt: new Date(Date.now() - getRandomInt(0, 1000 * 60 * 60 * 24 * 365)).toISOString(),
+  };
+}
+
+return Array.from({ length: 10 }).map(x => getRandomUser())",
+          "language": "javaScript",
+          "mode": "runOnceForAllItems",
+          "notice": "",
+        },
+        "position": [
+          680,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+      {
+        "id": "502761a1-d54f-40ef-a0c7-3d00e8378ac3",
+        "name": "AddField",
+        "parameters": {
+          "jsCode": "// Add a new field called 'myNewField' to the JSON of the item
+$input.item.json.myNewField = 1;
+
+return $input.item;",
+          "language": "javaScript",
+          "mode": "runOnceForEachItem",
+          "notice": "",
+        },
+        "position": [
+          1140,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+      {
+        "id": "e4a21d7d-6ac6-4d40-b9aa-63076a4823c4",
+        "name": "Aggregate",
+        "parameters": {
+          "jsCode": "let maxId = 0
+let sumAge = 0
+
+for (let it of $input.all()) {
+  maxId = Math.max(maxId, it.json.userId)
+  sumAge += it.json.age
+}
+
+return {
+  json: {
+    maxId,
+    avgAge: sumAge / $input.all().length
+  }
+}",
+          "language": "javaScript",
+          "mode": "runOnceForAllItems",
+          "notice": "",
+        },
+        "position": [
+          1360,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+      {
+        "id": "9f1f3762-5870-4905-a67e-4a8a92746a2f",
+        "name": "AccessPastNode",
+        "parameters": {
+          "jsCode": "const items = $('CreateData').all()
+const stats = $input.first().json
+
+return items.map(i => ({
+  ...i,
+  stats
+}))",
+          "language": "javaScript",
+          "mode": "runOnceForAllItems",
+          "notice": "",
+        },
+        "position": [
+          1580,
+          460,
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+      },
+    ],
+    "pinData": {},
+    "settings": {
+      "executionOrder": "v1",
+    },
+    "staticData": {},
+  },
+}
+`;
